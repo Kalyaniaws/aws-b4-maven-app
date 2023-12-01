@@ -31,7 +31,7 @@ pipeline {
 
             withCredentials([string(credentialsId: 'dockertoken', variable: 'token-password')]) {
 
-    			sh 'docker login -u kalyani2 -p ${token-password}'
+    			sh 'docker login -u kalyani2 -p dckr_pat_wCpRC4IMp3hy5wHpTiRtwdcSIEY'
 			}
 
             }   
