@@ -29,15 +29,15 @@ pipeline {
 
             script {
 
-            withCredentials([string(credentialsId: 'docker-token', variable: 'token')]) {
+            withCredentials([string(credentialsId: 'dockertoken', variable: 'token password')]) {
 
-    			sh 'docker login -u pylifedevops -p ${token}'
+    			sh 'docker login -u kalyani2 -p ${token}'
 			}
 
             }   
-                sh 'docker build . -t pylifedevops/cicd:v4'
-                sh 'docker push pylifedevops/cicd:v4'
-                echo "Job is successfully completed and Thank you"
+                sh 'docker build . -t kalyani2/cicd:v4'
+                sh 'docker push kalyani2/cicd:v4'
+                echo "job completed ty"
             }                        
         }
 
