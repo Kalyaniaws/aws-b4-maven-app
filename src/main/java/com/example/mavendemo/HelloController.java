@@ -8,7 +8,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "Succesful-Greetings kalyani";
+        return " Hi pylife-Succesful-Greetings kalyani";
     }
 
 }
